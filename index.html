@@ -1,0 +1,87 @@
+
+ <script src="jquery-3.7.1.js" sourcemappingurl="jquery-3.7.1.min.map"></script>
+ 
+  <script src="jquery-ui-1.13.3.custom/jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+  
+  
+  <link rel="stylesheet" href="jquery-ui-1.13.3.custom/jquery-ui-1.13.3.custom/jquery-ui.css">
+  
+
+
+
+<style>
+
+#kachelholder{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	
+	list-style-type: 
+	none; margin: 0; 
+	padding: 0; 
+	width: 450px;
+	height: 800px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	
+	
+}
+
+#kachel_old{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+	margin: 10px;
+}
+#kachel{
+	margin: 6px; 
+	float: left; 
+	width: 100px; 
+	height: 90px; 
+	font-size: 4em; 
+	text-align: center;
+	background-color: skyblue;
+}
+
+#kachelbild{
+	height: 80px;
+	width: 80px;
+}
+#menu{
+	position: absolute; 
+	bottom: 0px;
+	background-color: lightgray;
+	height: 40px;
+	width: 450px;
+	border-radius: 10px;
+}
+#menubild{
+	height: 40px;
+	width: 40px;
+}
+</style>
+<div id="kachelholder">
+<div id="kachel"><img src="./ico/bild.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/marker.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/suche.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/anruf.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/benutzer.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/umschlag.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/spielen.png" id="kachelbild"/></div>
+<div id="kachel"><img src="./ico/globus.png" id="kachelbild"/></div>
+
+<div id="menu">
+	<img src="./ico/menu.png" id="menubild"/>
+	<img src="./ico/home.png" id="menubild" style="position: absolute; left: 200px;"/>
+	<img src="./ico/back.png" id="menubild" style="position: absolute; right: 0px;"/>
+</div>
+</div>
+
+
+ <script>
+  $( function() {
+    $( "#kachelholder" ).sortable();
+    $( "#kachelholder" ).disableSelection();
+  } );
+  </script>
