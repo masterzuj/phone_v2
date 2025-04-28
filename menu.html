@@ -1,0 +1,45 @@
+
+<script src="jquery-3.7.1.js" sourcemappingurl="jquery-3.7.1.min.map"></script>
+ 
+<script src="jquery-ui-1.13.3.custom/jquery-ui-1.13.3.custom/jquery-ui.js"></script>
+
+
+<link rel="stylesheet" href="jquery-ui-1.13.3.custom/jquery-ui-1.13.3.custom/jquery-ui.css">
+
+
+<style>
+
+#kachel{
+	margin: 6px; 
+	float: left; 
+	width: 100px; 
+	height: 90px; 
+	font-size: 4em; 
+	text-align: center;
+	background-color: skyblue;
+}
+
+#kachelbild{
+	height: 80px;
+	width: 80px;
+}
+
+</style>
+<div id="kachelholder">
+<a href="./document/pic.html"><div id="kachel"><img src="./ico/bild.png" id="kachelbild"/></div></a>
+<a href="./document/map.html"><div id="kachel"><img src="./ico/marker.png" id="kachelbild"/></div></a>
+<a href="./document/search.html"><div id="kachel"><img src="./ico/suche.png" id="kachelbild"/></div></a>
+<a href="./document/phone.html"><div id="kachel"><img src="./ico/anruf.png" id="kachelbild"/></div></a>
+<a href="./document/user.html"><div id="kachel"><img src="./ico/benutzer.png" id="kachelbild"/></div></a>
+<a href="./document/mail.html"><div id="kachel"><img src="./ico/umschlag.png" id="kachelbild"/></div></a>
+<a href="./document/store.html"><div id="kachel"><img src="./ico/spielen.png" id="kachelbild"/></div></a>
+<a href="./document/web.html"><div id="kachel"><img src="./ico/globus.png" id="kachelbild"/></div></a>
+</div>
+
+<script>
+  $( function() {
+    $( "#kachelholder" ).sortable();
+    $( "#kachelholder" ).disableSelection(); 
+	
+  } );
+    </script>
