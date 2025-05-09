@@ -7,8 +7,8 @@
     git clone https://github.com/masterzuj/phone_v2.git
 
 
-Add your KI KEY in
-    url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
+        //Add your KI KEY in
+        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
 
 
 License for 3D Models Created with Autodesk Fusion 360 (Free, Non-Commercial Use)
