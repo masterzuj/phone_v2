@@ -4,6 +4,8 @@
 
 ![phone_v2](https://github.com/user-attachments/assets/9fee1ea6-7283-4152-8703-3fcb76508781)
 
+    git clone https://github.com/masterzuj/phone_v2.git
+
 
 License for 3D Models Created with Autodesk Fusion 360 (Free, Non-Commercial Use)
 
