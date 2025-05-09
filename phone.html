@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+<style>
+        body { margin: 0; }
+        #model-viewer-container { position: relative; width: 80%; height: 500px; margin: 20px auto; border: 1px solid #ccc; }
+        model-viewer { width: 100%; height: 100%; display: block; }
+        #iframe-container { position: absolute; top: 20px; left: 20px; z-index: 2; border: 1px solid black; background-color: white; }
+        #meinIframe { width: 300px; height: 200px; border: none; }
+    </style>
+
+<style>body{ font-size: 20px; font-family: Courier New;}</style>
+
+<script type="module" src="./model-viewer.min.js"></script>
+<div id="model-viewer-container">
+<model-viewer id="a_model" alt="1" style="width: 100%; height: 100%;"  src="./phone.glb" ar environment-image="" poster="" shadow-intensity="1" camera-controls touch-action="pan-x" camera-orbit="0deg 90deg"></model-viewer>
+
+    </div>
