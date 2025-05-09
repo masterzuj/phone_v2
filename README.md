@@ -1,6 +1,19 @@
 # phone_v2
 
+![phone](https://github.com/user-attachments/assets/c97ffbf3-73c3-4e9f-8d8d-70ac3dab33a0)
 
+![phone_v2](https://github.com/user-attachments/assets/9fee1ea6-7283-4152-8703-3fcb76508781)
+
+    git clone https://github.com/masterzuj/phone_v2.git
+
+
+Add your KI [KEY] under
+
+        url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
+
+Add your search [KEY] under
+
+        <script async src="https://cse.google.com/cse.js?cx=[KEY]">
 
 License for 3D Models Created with Autodesk Fusion 360 (Free, Non-Commercial Use)
 
