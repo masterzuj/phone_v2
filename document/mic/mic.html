@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  
+</head>
+<body>
+<div id="project_div" style="width: 100%; text-align: center; font-size: 100px; color: lightblue;"></div>
+
+<div id="status_div" style="width: 100%; text-align: center; font-size: 100px; color: lightblue;"></div>
+	
+<div style="position: fixed; top: 0px; right: 0px; text-align: center;">
+  <textarea id="output" rows="3" cols="10"></textarea>
+  <br/>
+  <button id="start" style="color: lightblue;">⏺</button>
+  <button id="speak">🗨️</button>
+  <button id="project">⬆️</button>
+  <br/>
+</div> 
+
+  <script>
+    // Überprüfen, ob die Spracherkennungs-API im Browser verfügbar ist
+    if ('webkitSpeechRecognition' in window) {
+      const recognition = new webkitSpeechRecognition();
+      recognition.lang = 'de-DE'; // Sprache auf Deutsch setzen
+      recognition.continuous = false; // Kontinuierliche Erkennung deaktivieren
+      recognition.interimResults = false; // Nur endgültige Ergebnisse ausgeben
+
+      recognition.onresult = function(event) {
+        const transcript = event.results[0][0].transcript;
+        document.getElementById('output').value = transcript;
+		  document.getElementById('status_div').innerHTML = "";
+      };
+
+      recognition.onerror = function(event) {
+        console.error('Fehler bei der Spracherkennung: ', event.error);
+      };
+
+      document.getElementById('start').onclick = function() {
+        recognition.start();
+		  
+		  document.getElementById('status_div').innerHTML = "<img src='free-microphone.webp' style='height: 100px;'/>";
+      };
+    } else {
+      console.log("Speech Recognition API ist in diesem Browser nicht verfügbar.");
+    }
+
+    // Funktion zur Sprachausgabe hinzufügen
+    document.getElementById('speak').onclick = function() {
+		
+		document.getElementById('status_div').innerHTML = "<img src='speech-bubble.jpg' style='height: 100px;'/>";
+		
+      const text = document.getElementById('output').value;
+		
+		
+		
+      if ('speechSynthesis' in window) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'de-DE'; // Sprache auf Deutsch setzen
+        speechSynthesis.speak(utterance);
+		  
+		  	setTimeout(() => {
+ 				document.getElementById('status_div').innerHTML = "";
+			}, "1000");
+		  
+		  
+      } else {
+        console.log("Speech Synthesis API ist in diesem Browser nicht verfügbar.");
+      }
+    }
+	
+	document.getElementById('project').onclick = function() {
+      var text_project = document.getElementById('output').value;
+	  document.getElementById('project_div').innerHTML = text_project;
+    }
+  </script>
+</body>
+</html>
+
+
+
+
