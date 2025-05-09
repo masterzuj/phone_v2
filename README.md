@@ -1,5 +1,7 @@
 # phone_v2
 
+![phone](https://github.com/user-attachments/assets/c97ffbf3-73c3-4e9f-8d8d-70ac3dab33a0)
+![phone_v2](https://github.com/user-attachments/assets/9fee1ea6-7283-4152-8703-3fcb76508781)
 
 
 License for 3D Models Created with Autodesk Fusion 360 (Free, Non-Commercial Use)
