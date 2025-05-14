@@ -8,15 +8,34 @@
 	height: 80px;
 	width: 80px;
 	margin: 5px;
+	border-radius: 20px;
+	border: 5px solid lightgray;
+	
+	font-size: 50px;
+}
+.callbutton{
+
+	background-color: lightblue;
+	height: 80px;
+	width: 80px;
+	margin: 5px;
+	border-radius: 20px;
+	border: 5px solid lightgray;
+	
+	font-size: 50px;
 }
 #tel_num{
 	width: 400px;
-	font-size: 20px; 
+	height: 40px;
+	font-size: 35px; 
 	margin-left: 20px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	border: 5px solid lightgray;
+	border-radius: 20px;
+	color: gray;
 }
 </style>
 <div id="tel_num"></div>
@@ -44,6 +63,12 @@
 <script src="jquery-3.7.1.js" sourcemappingurl="jquery-3.7.1.min.map"></script>
 
 <button class="phonebutton">#</button>
+
+<br/><br/>
+</center>
+<center>
+<button class="callbutton startcall" style="background-color: lightgreen;">✆</button>
+<button class="callbutton stopcall" style="background-color: red; margin-left: 80px;">✆</button>
 </center>
 
 <script>
@@ -55,13 +80,35 @@ $( document ).ready(function() {
 	var telnum = "0049";
 	$(".phonebutton").on('click',function(e) {
 	
-	telnum += $(this).html();
+			telnum += $(this).html();
 		
 			console.log(telnum);
 			
-			$("#tel_num").html("<a href='tel:"+telnum+"'>"+telnum+"</a>");
+			
+			
+			$("#tel_num").html(telnum);
 		
 	});
+	
+	$(".startcall").on('click',function(e) {
+	
+	
+			
+			window.open("tel:" + $("#tel_num").html() );
+			
+			console.log("tel:" + $("#tel_num").html());
+			
+		
+	});
+	
+	$(".stopcall").on('click',function(e) {
+	
+		$("#tel_num").html("");
+		
+		telnum = "0049";
+			
+	});
+	
 });
 
 </script>
