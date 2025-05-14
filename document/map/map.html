@@ -1,0 +1,60 @@
+
+ <link rel="stylesheet" href="./leaflet/leaflet.css"/>
+
+ <script src="./leaflet/leaflet.js"></script>
+
+<style>
+	#map { height: 700px; width: 400px;}
+</style>
+
+<center><div id="map"></div></center>
+
+
+<script>
+	
+	//leaflet
+	//var map = L.map('map').setView([51.505, -0.09], 13);
+	
+	
+	
+	//Start Geolocation
+	function getLocation() {
+	  if (navigator.geolocation) {
+		navigator.geolocation.getCurrentPosition(success, error);
+	  } else {
+		console.log("Geolocation is not supported by this browser.");
+	  }
+	}
+
+	function success(position) {
+	  console.log("Latitude: " + position.coords.latitude +
+	  "<br>Longitude: " + position.coords.longitude);
+		
+		
+		//Leaflet
+			var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 13);
+		
+			//leaflet Layer
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19,
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+		
+			
+			var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+		//END
+	}
+
+	function error() {
+	  console.log("Sorry, no position available.");
+	}
+	
+	//END Geolocation
+	
+	
+	getLocation();
+	
+	
+	
+	
+</script>
