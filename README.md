@@ -2,7 +2,8 @@
 
 ![phone](https://github.com/user-attachments/assets/c97ffbf3-73c3-4e9f-8d8d-70ac3dab33a0)
 
-![phone_v2](https://github.com/user-attachments/assets/9fee1ea6-7283-4152-8703-3fcb76508781)
+![image](https://github.com/user-attachments/assets/17b26c2a-35a2-4ec3-a357-e9965e292c97)
+
 
     git clone https://github.com/masterzuj/phone_v2.git
 
