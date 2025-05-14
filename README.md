@@ -12,6 +12,9 @@ Add your KI [KEY] under
 
         url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
 
+Visit: https://aistudio.google.com/ for more information.
+
+
 Add your search [KEY] under
 
         <script async src="https://cse.google.com/cse.js?cx=[KEY]">
