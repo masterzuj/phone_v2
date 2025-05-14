@@ -32,16 +32,22 @@
 		
 		
 		//Leaflet
-			var map = L.map('map').setView([position.coords.latitude, position.coords.longitude], 13);
-		
-			//leaflet Layer
-			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			maxZoom: 19,
-			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-			}).addTo(map);
-		
 			
-			var marker = L.marker([position.coords.latitude, position.coords.longitude]).addTo(map);
+			// Neue Koordinaten (z.B. Berlin)
+			var newLatLng = [position.coords.latitude, position.coords.longitude];
+			// Neuer Zoomlevel
+			var newZoom = 13;
+
+			// Karte auf die neuen Koordinaten und den neuen Zoomlevel setzen
+			map.setView(newLatLng, newZoom);
+			
+			
+			// Koordinaten für den neuen Marker 
+			var newMarkerLatLng = [position.coords.latitude, position.coords.longitude];
+
+			// Erstellen Sie ein Marker-Objekt mit den Koordinaten
+			var newMarker = L.marker(newMarkerLatLng).addTo(map);
+
 		//END
 	}
 
@@ -52,9 +58,13 @@
 	//END Geolocation
 	
 	
+	var map = L.map('map').setView([51.505, -0.09], 13);
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	
+	
 	getLocation();
-	
-	
-	
-	
 </script>
