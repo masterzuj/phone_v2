@@ -3,27 +3,89 @@
 <script src="./jquery-3.7.1.js" sourcemappingurl="./jquery-3.7.1.min.map"></script>
 
 <style>
+
+body{
+		font-family: Courier New;
+	}
+	
 #taste{
-	width: 20px;
-	height: 20px;
+	width: 38px;
+	height: 38px;
 	float: left;
 	border: 1px solid lightblue;
 	border-radius: 3px;
-	font-size: 12px;
+	font-size: 30px;
+	color: gray;
 	text-align: center;
 }
 #tasten_div{
 
   position: fixed;
   left: 50%;
-  bottom: 20px;
+  bottom: 0px;
   transform: translate(-50%, -50%);
-  margin: 0 auto;
+  width: 450px;
+  height: 150px;
   
  }
-</style>
+#input_div{
 
-<form><input type="text" id="text_input"> <input type="reset" value="X"></form>
+	position: fixed;
+	width: 450px;
+	height: 40px;
+	bottom: 250px;
+}
+#input_reset{
+	height: 40px;
+	font-size: 30px;
+	background-color: red;
+	border-radius: 20px;
+}
+#text_input{
+	height: 50px;
+	font-size: 18px;
+	width: 330px;
+}
+#input_submit{
+	height: 40px;
+	font-size: 30px;
+	background-color: lightgreen;
+	border-radius: 20px;
+}
+#message_container{
+	position: fixed;
+	height: 750px;
+	width: 450px;
+	overflow-y: auto;  
+	overflow-x: hidden;  
+}
+
+#in{
+	width: 300px;
+	background-color: lightgray;
+	margin-top: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+#out{
+	width: 300px;
+	background-color: lightblue;
+	margin-top: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	margin-left: 100px;
+}
+
+</style>
+<div id="message_container">
+
+<div id="out">Your answer</div>
+<div id="in">Your first incoming message</div>
+
+</div>
+
+<div id="input_div"><input type="reset" value="✘" id="input_reset"> <textarea id="text_input"></textarea> <input type="submit" value="✓" id="input_submit"></div>
 <div id="tasten_div">
 	<div id="taste" class="push_taste">1</div>
 	<div id="taste" class="push_taste">2</div>
@@ -35,6 +97,7 @@
 	<div id="taste" class="push_taste">8</div>
 	<div id="taste" class="push_taste">9</div>
 	<div id="taste" class="push_taste">0</div>
+	<div id="taste" class="push_taste">ß</div>
 	
 	<br clear="both"/>
 	
@@ -80,7 +143,7 @@
 	
 	<br clear="both"/>
 	
-	<div id="taste" class="push_taste" style="width: 200px;"> </div>
+	<div id="taste" class="push_taste" style="width: 440px;"> </div>
 	
 </div>
 
@@ -91,11 +154,13 @@ console.log("ready");
 $(window).click(function() {
   console.log("window clicked");
   $("#tasten_div").hide("fast");
+  $("#input_div").css("bottom", "50px");
 });
 
 $("#text_input").on("click", function(event) {
 	console.log("text clicked");
 	$("#tasten_div").show("fast");
+	$("#input_div").css("bottom", "250px");
 	event.stopPropagation();
 });
 
@@ -105,11 +170,20 @@ $(".push_taste").on("click", function() {
 	console.log("taste pushed");
 	$input_val = $("#text_input").val();
 	$("#text_input").val($input_val + $(this).html());
-	$("#tasten_div").show("fast");
+	//$("#tasten_div").show("fast");
 	event.stopPropagation();
 });
 
 
+$("#input_submit").on("click", function() {
+	console.log($("#text_input").val());
+	$("#message_container").prepend("<div id='out'>"+$("#text_input").val()+"</div>");
+	$("#text_input").val("");
+});
+
+$("#input_reset").on("click", function() {
+	$("#text_input").val("");
+});
 
 /*
 $("#text_input").on("input", function() {
