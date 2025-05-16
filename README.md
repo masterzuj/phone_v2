@@ -1,5 +1,7 @@
 # phone_v2
 
+![image](https://github.com/user-attachments/assets/5e165c32-2d4c-4c56-b613-00fd33faf8c4)
+
 ![phone](https://github.com/user-attachments/assets/c97ffbf3-73c3-4e9f-8d8d-70ac3dab33a0)
 
 ![image](https://github.com/user-attachments/assets/17b26c2a-35a2-4ec3-a357-e9965e292c97)
