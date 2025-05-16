@@ -7,6 +7,7 @@
 
     git clone https://github.com/masterzuj/phone_v2.git
 
+For full functionality SERVER required...
 
 Add your KI [KEY] under
 
