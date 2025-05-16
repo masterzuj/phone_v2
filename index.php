@@ -38,5 +38,3 @@ console.log("╚══════╝ ╚═════╝ ╚═╝  ╚═╝
 </div>
 
 
-
-<div style="position:fixed; bottom: 0px; right: 0px; font-size: 17px; background-color: white;"><a href="https://itrk.legal/QqA.8V.KaB.html?impressum-datenschutz" target="_blank" style="font-size: 17px; color: black;">Impressum | Datenschutzerklärung</a><br/>(c) ZUJKOV COM | all rights reserved</div>
