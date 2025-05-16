@@ -18,7 +18,7 @@ if(isset($_POST["name_user"])){
 	position: absolute; 
 	background-color: lightgray;
 	height: 40px;
-	width: 450px;
+	width: 452px;
 	border-radius: 10px;
 }
 #menubild{
