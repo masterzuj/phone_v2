@@ -26,11 +26,11 @@ console.log("╚══════╝ ╚═════╝ ╚═╝  ╚═╝
 
 
 <div style="float: left;">
-<iframe src="./menu.html" style="width: 460px; height: 750px;" scrolling="no" frameBorder="0"></iframe><br/>
+<iframe src="./menu.html" style="width: 460px; height: 750px; margin-top:40px;" scrolling="no" frameBorder="0"></iframe><br/>
 <iframe src="./controls.php" style="width: 460px; height: 50px; margin-left: -8px;" scrolling="no" frameBorder="0"></iframe>
 </div>
 <div style="float: left;">
-<iframe style="width: 500px; height: 750px; " src="./phone.html" frameBorder="0" scrolling="no"></iframe>
+<iframe style="width: 500px; height: 750px; margin-top:-20px;" src="./phone.html" frameBorder="0" scrolling="no"></iframe>
 
 </div>
 
