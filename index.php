@@ -30,11 +30,8 @@ console.log("╚══════╝ ╚═════╝ ╚═╝  ╚═╝
 <iframe src="./controls.php" style="width: 460px; height: 50px;" scrolling="no" frameBorder="0"></iframe>
 </div>
 <div style="float: left;">
-<iframe style="width: 500px; height: 750px; " src="https://zujkov.com/phone/phone.html" frameBorder="0" scrolling="no"></iframe>
-<!--
-<iframe style="width: 500px; height: 750px; " src="https://zujkov.com/hand/hand.php" frameBorder="0" scrolling="no"></iframe>
-<iframe style="width: 500px; height: 750px; " src="https://zujkov.com/hand_three/hands11/index.html" frameBorder="0" scrolling="no"></iframe>
--->
+<iframe style="width: 500px; height: 750px; " src="./phone.html" frameBorder="0" scrolling="no"></iframe>
+
 </div>
 
 
