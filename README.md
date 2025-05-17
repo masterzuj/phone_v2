@@ -8,7 +8,7 @@ For full functionality SERVER required...
 
 Clone then the PHONE into your "httpdocs".
 
-The Model (glb, mtl, obj) is for Personal use only.
+The CAD Model (glb, mtl, obj) is for Personal use only.
 
 Write your own APP under the DIR "document".
 
