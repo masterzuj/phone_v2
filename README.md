@@ -12,8 +12,8 @@
 
 For full functionality SERVER required...
 
-Write your own APP under the dir "document"
-
+Write your own APP under the DIR "document"
+Link your APP in the "menu.html" and "menu.php"
 
 
 Add your KI [KEY] under
