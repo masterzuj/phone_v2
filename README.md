@@ -16,6 +16,8 @@ Link your APP in the "menu.html" and "menu.php".
 
 Change the link and icon for your APP.
 
+Choose your APP SIZE - width: 460px; height: 750px;
+
 Visit also CSS3D_v8.html for realistic AR View.
 
 For your own KI APP and SEARCH APP, [KEY] is required.
