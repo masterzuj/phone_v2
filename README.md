@@ -22,6 +22,8 @@ Link your APP in the "menu.html" and "menu.php".
 
 Change the link and icon for your APP.
 
+For your own KI APP and SEARCH APP, [KEY] is required.
+
 Add your KI [KEY] under
 
         url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
