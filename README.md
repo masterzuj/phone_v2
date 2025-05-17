@@ -12,8 +12,9 @@
 
 For full functionality SERVER required...
 
-Write your own APP under the DIR "document"
-Link your APP in the "menu.html" and "menu.php"
+Write your own APP under the DIR "document".
+
+Link your APP in the "menu.html" and "menu.php".
 
         <div id="kachel"></div>
 
