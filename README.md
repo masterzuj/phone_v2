@@ -6,6 +6,8 @@
 
 For full functionality SERVER required...
 
+Clone then the PHONE into your "httpdocs".
+
 Write your own APP under the DIR "document".
 
 Use languages: html, css, js, php
