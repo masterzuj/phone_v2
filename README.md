@@ -22,6 +22,8 @@ Link your APP in the "menu.html" and "menu.php".
 
 Change the link and icon for your APP.
 
+Visit also CSS3D_v8.html for realistic AR View.
+
 For your own KI APP and SEARCH APP, [KEY] is required.
 
 Add your KI [KEY] under
