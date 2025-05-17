@@ -12,6 +12,10 @@
 
 For full functionality SERVER required...
 
+Write your own APP under the dir "document"
+
+
+
 Add your KI [KEY] under
 
         url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
