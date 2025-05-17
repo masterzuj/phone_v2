@@ -14,6 +14,8 @@ For full functionality SERVER required...
 
 Write your own APP under the DIR "document".
 
+Use languages: html, css, js, php
+
 Link your APP in the "menu.html" and "menu.php".
 
         <div id="kachel"></div>
