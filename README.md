@@ -6,6 +6,8 @@
 
 For full functionality SERVER required...
 
+I recommend a DEBIAN Server.
+
 Clone then the PHONE into your "httpdocs".
 
 The CAD Model (glb, mtl, obj) is for Personal use only.
