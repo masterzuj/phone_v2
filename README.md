@@ -14,7 +14,8 @@ For full functionality SERVER required...
 
 Write your own APP under the DIR "document"
 Link your APP in the "menu.html" and "menu.php"
-
+        <div id="kachel"><a href="./document/contacts/index.html">😀</a></div>
+Change the link and icon for your APP.
 
 Add your KI [KEY] under
 
