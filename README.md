@@ -12,6 +12,11 @@ Clone then the PHONE into your "httpdocs".
 
 The CAD Model (glb, mtl, obj) is for Personal use only.
 
+The SOURCE is under MIT Licence, free to use...
+
+Please take into consideration the Authors and MIT Licence
+of used libraries, like JQuery and Three.js
+
 Write your own APP under the DIR "document".
 
 Use languages: html, css, js, php
