@@ -19,7 +19,7 @@ of used libraries, like JQuery and Three.js
 
 Write your own APP under the DIR "document".
 
-Use languages: html, css, js, php
+Use languages: html, css, js, php, (mysqli)
 
 Link your APP in the "menu.html" and "menu.php".
 
