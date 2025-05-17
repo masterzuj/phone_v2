@@ -1,6 +1,6 @@
 # phone_v2
 
-![image](https://github.com/user-attachments/assets/5e165c32-2d4c-4c56-b613-00fd33faf8c4) ![image](https://github.com/user-attachments/assets/79229b0d-8a2c-4a70-8b43-ca3e1c719ec5) 
+![image](https://github.com/user-attachments/assets/79229b0d-8a2c-4a70-8b43-ca3e1c719ec5) ![image](https://github.com/user-attachments/assets/5e165c32-2d4c-4c56-b613-00fd33faf8c4) 
 
     git clone https://github.com/masterzuj/phone_v2.git
 
