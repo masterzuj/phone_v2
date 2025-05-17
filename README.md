@@ -22,12 +22,15 @@ Visit also CSS3D_v8.html for realistic AR View.
 
 For your own KI APP and SEARCH APP, [KEY] is required.
 
+Open ./document/ki.html
+
 Add your KI [KEY] under
 
         url: 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite:generateContent?key=[KEY]', //
 
 Visit: https://aistudio.google.com/ for more information.
 
+Open ./document/search.html
 
 Add your search [KEY] under
 
