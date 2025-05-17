@@ -31,7 +31,7 @@ Choose your APP SIZE - width: 460px; height: 750px;
 
 Visit also CSS3D_v8.html for realistic AR View.
 
-For your GEMINI KI APP and SEARCH APP, [KEY] is required.
+For your GEMINI KI APP and GOOGLE SEARCH APP, a [KEY] is required.
 
 Open ./document/ki.html
 
