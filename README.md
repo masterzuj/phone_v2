@@ -1,12 +1,39 @@
 # phone_v2
 
-![phone](https://github.com/user-attachments/assets/c97ffbf3-73c3-4e9f-8d8d-70ac3dab33a0)
-
-![image](https://github.com/user-attachments/assets/17b26c2a-35a2-4ec3-a357-e9965e292c97)
-
+![image](https://github.com/user-attachments/assets/79229b0d-8a2c-4a70-8b43-ca3e1c719ec5) ![image](https://github.com/user-attachments/assets/5e165c32-2d4c-4c56-b613-00fd33faf8c4) 
 
     git clone https://github.com/masterzuj/phone_v2.git
 
+For full functionality SERVER required...
+
+I recommend a DEBIAN Server.
+
+Clone then the newest PHONE (phone_v2) into your "httpdocs".
+
+The CAD Model (glb, mtl, obj) is for Personal use only.
+
+The SOURCE is under MIT Licence, free to use...
+
+Please take into consideration the Authors and MIT Licence
+of used libraries, like JQuery and Three.js
+
+Write your own APP under the DIR "document".
+
+Use languages: html, css, js, php, (mysqli)
+
+Link your APP in the "menu.html" and "menu.php".
+
+        <div id="kachel"></div>
+
+Change the link and icon for your APP.
+
+Choose your APP SIZE - width: 460px; height: 750px;
+
+Visit also CSS3D_v8.html for realistic AR View.
+
+For your GEMINI KI APP and GOOGLE SEARCH APP, a [KEY] is required.
+
+Open ./document/ki.html
 
 Add your KI [KEY] under
 
@@ -14,6 +41,7 @@ Add your KI [KEY] under
 
 Visit: https://aistudio.google.com/ for more information.
 
+Open ./document/search.html
 
 Add your search [KEY] under
 
